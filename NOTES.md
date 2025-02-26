@@ -1,0 +1,6 @@
+- RAG is when we can change output of a LLM by providing context alongside users input, to provide personalised answers.
+- More useful due to less training cost.
+- vector embedding is a popular technique to store data ,images, file in a format that is optimised for algorithms and deep learning models.
+- Vector embeddings of different LLMS can be different.
+- For vector DB using Datastax
+- Get the package and then add seed in package.json scripts to seed or fill the db , npm i ts-node
