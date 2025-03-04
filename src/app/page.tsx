@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import cb_logo from "./assets/cb_logo.svg";
+import cricketgpt from "./assets/cricket.com.svg";
 import {useChat} from "ai/react";
 import { Message } from "ai";
 import Bubble from "./components/Bubble";
@@ -24,13 +24,13 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center h[100vh] font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center">
-        <Image src={cb_logo} width="100" alt="cricket logo" className="pt-2"></Image>
+        <Image src={cricketgpt} width="200" alt="cricket logo" className="pt-6"></Image>
         <section className={noMessages ? "" : ""}>
           {noMessages ? (
             <>
             <p className="pt-0 pb-0 pr-80 pl-80 text-2xl text-black">
               The ultimate place for Cricket super fans!
-              Ask CricketGPT anyhthing about the fanstastic sport
+              Ask CricketGPT anything about the fanstastic sport
               of cricket and it will come up with most up-to date answers.
               We hope you enjoy !
             </p>
@@ -51,16 +51,16 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="fixed bottom-0 w-full max-w-4xl p-4">
             <div className="flex gap-2">
               <input 
-          className="w-full p-3 font-medium border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black" 
-          onChange={handleInputChange} 
-          value={input} 
-          placeholder="Ask me something..."
+                className="w-full p-3 font-medium border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black" 
+                onChange={handleInputChange} 
+                value={input} 
+                placeholder="Ask me something..."
               />
               <button 
-          type="submit" 
-          className="px-4 py-3 font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none"
+                  type="submit" 
+                  className="px-4 py-3 font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none"
               >
-          Send
+                  Send
               </button>
             </div>
           </form>

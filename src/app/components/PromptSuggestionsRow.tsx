@@ -1,4 +1,5 @@
 import PromptSuggestionButton from "./PromptSuggestionButton";
+
 const PromptSuggestionsRow = ({onPromptClick}) => {
     const prompts = [
         "Who is the highest earning player?",
