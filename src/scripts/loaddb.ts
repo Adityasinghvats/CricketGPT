@@ -36,7 +36,7 @@ const splitter = new RecursiveCharacterTextSplitter({
     chunkOverlap:100,
 })
 
-//create collection in astradb with dimensions and similarityMetric
+// create collection in astradb with dimensions and similarityMetric
 const createCollection = async(similarityMetric: SimilarityMetric = "dot_product") => {
     const res = await db.createCollection(ASTRA_DB_COLLECTION ,{
         vector: {
